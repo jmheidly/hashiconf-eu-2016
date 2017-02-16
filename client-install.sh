@@ -32,7 +32,7 @@ log_level = "DEBUG"
 client {
     enabled = true
     servers = [
-      "wk-1", "wk-2"
+      "en-1", "en-2", "en-3"
     ]
     options {
         "driver.raw_exec.enable" = "1"
