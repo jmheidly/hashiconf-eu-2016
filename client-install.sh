@@ -6,14 +6,14 @@ export IP_ADDRESS=$(curl -s -H "Metadata-Flavor: Google" \
 apt-get update
 apt-get install -y unzip dnsmasq
 
-wget https://releases.hashicorp.com/nomad/0.4.1/nomad_0.4.1_linux_amd64.zip
-unzip nomad_0.4.1_linux_amd64.zip
+wget https://releases.hashicorp.com/nomad/0.5.4/nomad_0.5.4_linux_amd64.zip
+unzip nomad_0.5.4_linux_amd64.zip
 mv nomad /usr/local/bin/
 
 mkdir -p /var/lib/nomad
 mkdir -p /etc/nomad
 
-rm nomad_0.4.1_linux_amd64.zip
+rm nomad_0.5.4_linux_amd64.zip
 
 cat > client.hcl <<EOF
 addresses {
@@ -32,7 +32,7 @@ log_level = "DEBUG"
 client {
     enabled = true
     servers = [
-      "ns-1", "ns-2", "ns-3"
+      "wk-1", "wk-2"
     ]
     options {
         "driver.raw_exec.enable" = "1"
