@@ -15,9 +15,9 @@ job "consul" {
       }
 
       artifact {
-        source = "https://releases.hashicorp.com/consul/0.6.4/consul_0.6.4_linux_amd64.zip"
+        source = "https://releases.hashicorp.com/consul/0.7.5/consul_0.7.5_linux_amd64.zip"
         options {
-          checksum = "sha256:abdf0e1856292468e2c9971420d73b805e93888e006c76324ae39416edcf0627"
+          checksum = "sha256:3740c3d516c76bbd1032d554fe93c23d60fdc83ee43eacb3e10f3e1d27e87d8c"
         }
       }
 
