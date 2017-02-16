@@ -8,7 +8,7 @@ job "hashiapp" {
   }
 
   group "hashiapp" {
-    count = 3
+    count = 2
 
     task "hashiapp" {
       driver = "exec"
@@ -25,7 +25,7 @@ job "hashiapp" {
       artifact {
         source = "https://storage.googleapis.com/evernew/v1.0.0/hashiapp"
         options {
-          checksum = "sha256:ce68362c55554632b32b12301c97f21bbdbab081d5a5107fd3424b769ae5d648"
+          checksum = "sha256:cfb1c651ec9088a690197bb0410ca1e55d9eae432769b6b70c08cfb4b7b758d9"
         }
       }
 
